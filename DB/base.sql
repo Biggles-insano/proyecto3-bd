@@ -25,3 +25,4 @@ CREATE TABLE Venta_Factura_Maestro ( id_venta_factura INT PRIMARY KEY AUTO_INCRE
 CREATE TABLE Descuento ( id_descuento INT PRIMARY KEY AUTO_INCREMENT, nombre_descuento VARCHAR(100) NOT NULL, porcentaje DECIMAL(5, 2), monto_fijo DECIMAL(10, 2), fecha_inicio DATE NOT NULL, fecha_fin DATE NOT NULL ); 
 
 CREATE TABLE Producto_Descuento ( id_producto_descuento INT PRIMARY KEY AUTO_INCREMENT, producto_id INT, descuento_id INT, cantidad_aplicada DECIMAL(10, 2) NOT NULL, -- El descuento aplicado al producto FOREIGN KEY (producto_id) REFERENCES Producto(id_producto), FOREIGN KEY (descuento_id) REFERENCES Descuento(id_descuento) ); 
+
