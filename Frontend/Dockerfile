@@ -8,11 +8,14 @@ COPY package*.json ./
 # Instalar dependencias
 RUN npm install
 
-# Copiar código fuente
+# Copiar todo el código fuente
 COPY . .
 
-# Puerto que utilizará la aplicación
-EXPOSE 3000
+# Construir el proyecto (esto genera la carpeta dist/)
+RUN npm run build
 
-# Comando para iniciar la aplicación en modo desarrollo
-CMD ["npm", "start"]
+# Exponer el puerto por donde Vite preview sirve el contenido
+EXPOSE 4173
+
+# Iniciar la aplicación en modo preview (producción)
+CMD ["npx", "vite", "preview", "--host"]
