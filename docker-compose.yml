@@ -6,10 +6,6 @@ services:
     container_name: react-frontend
     ports:
       - "4173:4173"
-    # ¡NO montes volúmenes en producción preview!
-    # volumes:
-    #   - ./Frontend:/app
-    #   - /app/node_modules
     depends_on:
       - backend
     environment:
