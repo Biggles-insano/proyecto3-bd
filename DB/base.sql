@@ -56,3 +56,26 @@ BEGIN
 END;
 
 DELIMITER ;
+
+
+INSERT INTO Marca (nombre_marca, pais_origen) VALUES
+('Nike', 'Estados Unidos'),
+('Adidas', 'Alemania'),
+('Zara', 'España'),
+('H&M', 'Suecia'),
+('Levi''s', 'Estados Unidos'),
+('Puma', 'Alemania'),
+('Under Armour', 'Estados Unidos'),
+('Bershka', 'España'),
+('Calvin Klein', 'Estados Unidos'),
+('Tommy Hilfiger', 'Estados Unidos'),
+('Polo Ralph Lauren', 'Estados Unidos'),
+('U.S. Polo Assn.', 'Estados Unidos'),
+('Nautica', 'Estados Unidos'),
+('Columbia', 'Estados Unidos'),
+('Emporio Armani', 'Italia'),
+('Guess', 'Estados Unidos');
+('Diesel', 'Italia'),
+('Lacoste', 'Francia');
+
+
