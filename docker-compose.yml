@@ -5,14 +5,15 @@ services:
     build: ./Frontend
     container_name: react-frontend
     ports:
-      - "3000:3000"
-    volumes:
-      - ./Frontend:/app
-      - /app/node_modules
+      - "4173:4173"
+    # ¡NO montes volúmenes en producción preview!
+    # volumes:
+    #   - ./Frontend:/app
+    #   - /app/node_modules
     depends_on:
       - backend
     environment:
-      - REACT_APP_API_URL=http://localhost:5000/api
+      - REACT_APP_API_URL=http://backend:5000/api
     networks:
       - app-network
 
