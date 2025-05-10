@@ -59,23 +59,45 @@ DELIMITER ;
 
 
 INSERT INTO Marca (nombre_marca, pais_origen) VALUES
-('Nike', 'Estados Unidos'),
-('Adidas', 'Alemania'),
-('Zara', 'España'),
-('H&M', 'Suecia'),
 ('Levi''s', 'Estados Unidos'),
-('Puma', 'Alemania'),
-('Under Armour', 'Estados Unidos'),
-('Bershka', 'España'),
 ('Calvin Klein', 'Estados Unidos'),
 ('Tommy Hilfiger', 'Estados Unidos'),
-('Polo Ralph Lauren', 'Estados Unidos'),
-('U.S. Polo Assn.', 'Estados Unidos'),
+('Polo Ralph Lauren.', 'Estados Unidos'),
 ('Nautica', 'Estados Unidos'),
 ('Columbia', 'Estados Unidos'),
-('Emporio Armani', 'Italia'),
-('Guess', 'Estados Unidos');
-('Diesel', 'Italia'),
-('Lacoste', 'Francia');
+('Guess', 'Estados Unidos'),
+('Lacoste', 'Francia'),
+('Balenciaga', 'Francia'),
+('Louis Vuitton', 'Francia'),
+('Gucci', 'Italia'),
+('Ralph Lauren', 'Estados Unidos'),
+('Giorgio Armani', 'Italia'),
+('Christian Dior', 'Francia'),
+('Chanel', 'Francia'),
+('Burberry', 'Reino Unido'),
+('Prada', 'Italia'),
+('Hermès', 'Francia'),
+('Moncler', 'Italia');
 
 
+INSERT INTO Categoria_Producto (nombre_categoria) VALUES
+('Camisas'),
+('Pantalones'),
+('Chaquetas'),
+('Zapatos'),
+('Accesorios'),
+('Vestidos'),
+('Sudaderas'),
+('Shorts'),
+('Faldas'),
+('Trajes de baño'),
+('Blusas'),
+('Abrigos'),
+('Ropa interior'),
+('Calcetines'),
+('Cinturones'),
+('Gorras'),
+('Bufandas'),
+('Guantes'),
+('Pijamas'),
+('Overoles');
