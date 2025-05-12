@@ -200,7 +200,16 @@ INSERT INTO Marca (nombre_marca, pais_origen) VALUES
 ('Versace', 'Italia'),
 ('Balenciaga', 'Francia'),
 ('Valentino', 'Italia'),
-('Saint Laurent', 'Francia');
+('Yves Saint Laurent', 'Francia');
+('Tommy Hilfiger', 'Estados Unidos'),
+('Polo Ralph Lauren', 'Estados Unidos'),
+('Calvin Klein', 'Estados Unidos'),
+('Lacoste', 'Francia'),
+('Guess', 'Estados Unidos'),
+('Giorgio Armani', 'Italia'),
+('Christian Dior', 'Francia'),
+('Chanel', 'Francia'),
+('Moncler', 'Italia');
 
 INSERT INTO Categoria_Producto (nombre_categoria) VALUES
 ('Camisas de seda'),
