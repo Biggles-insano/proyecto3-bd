@@ -8,11 +8,14 @@ COPY package*.json ./
 # Instalar dependencias
 RUN npm install
 
-# Copiar código fuente
+# Copiar el resto del código fuente
 COPY . .
 
-# Puerto que utilizará la aplicación
+# ⚠️ Generar el cliente de Prisma
+RUN npx prisma generate
+
+# Exponer el puerto del servidor Express
 EXPOSE 5000
 
-# Comando para iniciar la aplicación 
+# Comando para iniciar la aplicación
 CMD ["npm", "start"]
